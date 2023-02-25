@@ -3,18 +3,25 @@
     margin: 0;
     padding: 0;
 }
+
+/*Navigation Part*/
 nav{
     background-color: purple;
 }
+
+/*Header Part */
 header{
     background-color: green;
 }
+/*Main Part */
 main{
     border: 1px solid red;
 }
+
 section{
     background-color:lightblue;
 }
+/*Footer Part */
 footer{
     background-color: lightcyan;
 }
