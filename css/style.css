@@ -31,7 +31,7 @@ nav ul a{
 /*Header Part */
 header{
     background-color: green;
-    height: 90vh;
+    height: 80vh;
 }
 /*Main Part */
 main{
@@ -44,6 +44,7 @@ section{
 /*Footer Part */
 footer{
     background-color: lightcyan;
+    height: 10vh;
 }
 .copyright{
     border: 1px solid red;
