@@ -14,6 +14,17 @@ nav{
     width: 30%;
 }
 
+nav ul{
+    display: flex;
+    width: 30%;
+    list-style: none;
+}
+
+nav ul a{
+  color: white;  
+  text-decoration: none;
+}
+
 /*Header Part */
 header{
     background-color: green;
