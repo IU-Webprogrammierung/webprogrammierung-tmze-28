@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+body{
+    padding: 0 2.5%;
+}
+
 /*Navigation Part*/
 nav{
     background-color: purple;
@@ -32,10 +36,17 @@ nav ul a{
 header{
     background-color: green;
     height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-end;
 }
+
+.btn
 /*Main Part */
 main{
     border: 1px solid red;
+   
 }
 
 section{
@@ -45,11 +56,16 @@ section{
 footer{
     background-color: lightcyan;
     height: 10vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5%;
 }
 .copyright{
     border: 1px solid red;
+    width: 30%;
 }
 
 .icons{
     border: 1px solid green;
+    width: 30%;
 }
