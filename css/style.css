@@ -42,7 +42,9 @@ header{
     justify-content: flex-end;
 }
 
-.btn
+.buttons{
+    margin-bottom: 5%;
+}
 /*Main Part */
 main{
     border: 1px solid red;
