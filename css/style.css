@@ -9,9 +9,15 @@ body{
     padding: 0 2.5%;
 }
 
+h1{
+    font-size: 3rem;
+    margin-bottom: 0.5%;
+    color: #869464;
+}
+
 /*Navigation Part*/
 nav{
-    background-color: purple;
+    
     display: flex;
     justify-content: space-between;
     height: auto;
@@ -29,13 +35,19 @@ nav ul{
 }
 
 nav ul a{
-  color: white;  
+  color:#322F37;  
   text-decoration: none;
+ 
 }
+
+nav ul a:hover{
+    color:#322F37;  
+   border-bottom: 2px solid #C7DC94;
+  }
 
 /*Header Part */
 header{
-    background-image: url("../img/apple-hero.jpg");
+    background: linear-gradient(to bottom, rgba(177, 195, 131, 0.5),rgba(134, 148, 100, 0.5)), url("../img/apple-hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 80vh;
@@ -47,17 +59,18 @@ header{
 
 .buttons{
     margin-bottom: 5%;
-    border: 1px solid red;
+    
     width: 50%;
     display: flex;
     justify-content: center;
 }
 
 .btn{
-    background-color: #869464;
-    width: 200px;
+background-color: white;
+    color: #869464;  
+    width: 323px;
     height: 44px;
-    color: white;
+    font-size: 1.5rem;
     padding: 2.5%;
     margin: 2.5%;
 justify-content: center;
@@ -68,28 +81,63 @@ justify-content: center;
 }
 
 .btn:hover{
-    background-color: white;
-    color: #869464;
+      background-color: #869464; color: white;
 }
 
 
 
 /*Main Part */
 main{
-    border: 1px solid red;
+    
+
    
 }
 
 section{
-    background-color:lightblue;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+  padding-top: 2.5%;
 }
+
+.top-bg{
+      background: rgb(199,220,148);
+  background: linear-gradient(200deg, rgba(199,220,148,1) 0%, rgba(255,255,255,1) 39%);
+
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    
+}
+
+#info{
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5%;
+    
+}
+
+#info h2{
+    width: 20%;
+    font-size: 2rem;
+}
+
+#info img{
+    width: 10%;
+}
+
+
 /*Footer Part */
 footer{
-    background-color: lightcyan;
+    background-color: #869464;
     height: 10vh;
     display: flex;
     justify-content: center;
     margin-bottom: 2.5%;
+    margin-top: 2.5%;
 }
 .copyright{
     border: 1px solid red;
