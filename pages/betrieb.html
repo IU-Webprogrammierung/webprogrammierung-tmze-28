@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -19,40 +19,63 @@
 <body>
      
     <nav>
-        <a href="index.html"><img src="img/logo_ka-root.svg" alt="Logo" id="logo"></a>
+        <a href="../index.html"><img src="../img/logo_ka-root.svg" alt="Logo" id="logo"></a>
         <div class="menu-icon"><i class="fa fa-bars"></i></div>
         <ul>
-          <li><a href="pages/betrieb.html">Betrieb anmelden</a></li>
+          <li><a href="betrieb.html">Betrieb anmelden</a></li>
           <li><a href="unsere-mission.html">Unsere Mission</a></li>
           <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
       </nav>
       
-    <header class="gradient-bg">
-        <h2 class="text">Wir retten Lebensmittel</h2>
-        <div class="buttons">
-<a href=""class="btn transform">Für Betriebe</a>
-<a href=""class="btn transform">Hol dir die App!</a>
-</div>
-</header>
+   
 
 
 
     <main>
-        <section class="top-bg">
-            <h1>Gemeinsam gegen Verschwendung</h1>
-            <p>Hilf uns gegen Food Waste vorzugehen und lade das App herunter. </p>
-            <hr class="animate slide-in-left">
-
-            <article id="info">
-                <h2>Deine Plattform für Überproduktions- und Nicht-Standardprodukte</h2>
-               <img class="foodwaste" src="img/food-waste.jpg" alt="Gegen Foodwaste"> 
-            </article>
+        
+        <section>
+          <h2>Melden Sie sich jetzt an!</h2>
+          <form class="md-form">
+            <h2 class="md-form__title">Anmeldung als Betrieb</h2>
+            
+            <div class="md-form__group">
+              <label for="company-name" class="md-form__label">Firmenname</label>
+              <input type="text" id="company-name" name="company-name" required class="md-form__input">
+            </div>
+            
+            <div class="md-form__group">
+              <label for="contact-name" class="md-form__label">Ansprechpartner</label>
+              <input type="text" id="contact-name" name="contact-name" required class="md-form__input">
+            </div>
+            
+            <div class="md-form__group">
+              <label for="email" class="md-form__label">E-Mail</label>
+              <input type="email" id="email" name="email" required class="md-form__input">
+            </div>
+            
+            <div class="md-form__group">
+              <label for="password" class="md-form__label">Passwort</label>
+              <input type="password" id="password" name="password" required class="md-form__input">
+            </div>
+            
+            <div class="md-form__group">
+              <label for="confirm-password" class="md-form__label">Passwort bestätigen</label>
+              <input type="password" id="confirm-password" name="confirm-password" required class="md-form__input">
+            </div>
+            
+            <button type="submit" class="md-form__button">Anmelden</button>
+          </form>
+          
+          
         </section>
         <section>
-            <div class="content">
-            <p>Food waste oder Lebensmittelverschwendung bezieht sich auf die unnötige Entsorgung von Lebensmitteln, die noch geniessbar wären. Einer der Hauptgründe für Food Waste ist die Überproduktion bei Bauern, bei der große Mengen an Lebensmitteln produziert werden, die nicht verkauft oder konsumiert werden können. Dies führt nicht nur zu finanziellen Verlusten für die Bauern, sondern auch zu Umweltproblemen durch die unnötige Verschwendung von Ressourcen wie Wasser und Energie, die für die Produktion dieser Lebensmittel verwendet wurden. Es ist wichtig, dass wir als Gesellschaft uns bewusster über unsere Essgewohnheiten und den Umgang mit Lebensmitteln werden, um die Menge an Food Waste zu reduzieren und eine nachhaltigere Lebensmittelproduktion und -konsum zu erreichen.</p>
-        </div>
+          <img src="" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam harum perspiciatis deleniti veritatis laborum velit sapiente eos eum pariatur iure sunt fugit impedit cupiditate reprehenderit ducimus eius maxime, consequatur unde.¨</p>
+        </section>
+
+        <section>
+          <h2>FAQ</h2>
         </section>
     </main>
     <footer>

@@ -378,4 +378,70 @@
   }
   
   
+  /*CSS Formular für betrieb.html */
+
+  /* Form Styles *//* Material Design Form Styles */
+
+.md-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .md-form__title {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .md-form__group {
+    margin-bottom: 20px;
+  }
+  
+  .md-form__label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #000;
+  }
+  
+  .md-form__input {
+    width: 100%;
+    padding: 16px;
+    border-radius: 4px;
+    border: none;
+    background-color: #f5f5f5;
+    font-size: 1.2rem;
+    color: #000;
+    box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .md-form__input:focus {
+    outline: none;
+    background-color: #eee;
+  }
+  
+  .md-form__button {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    border-radius: 4px;
+    border: none;
+    background-color: #3f51b5;
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  
   
