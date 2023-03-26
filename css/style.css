@@ -445,3 +445,53 @@
   
   
   
+/*FAQ mit Material design */
+.faq {
+    padding: 20px;
+  }
+  
+  .accordion {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .accordion-item {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #f5f5f5;
+  }
+  
+  .accordion-title {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .accordion-content {
+    padding: 15px;
+    background-color: #fff;
+  }
+  
+  .accordion-content p {
+    margin: 0;
+  }
+  
+  .accordion-item.active .accordion-header i {
+    transform: rotate(45deg);
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .accordion {
+      max-width: 700px;
+    }
+  }
+  
