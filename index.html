@@ -11,31 +11,36 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <title>ka-root Home</title>
+
 </head>
 <body>
-       
+     
     <nav>
         <a href="index.html"><img src="img/logo_ka-root.svg" alt="Logo" id="logo"></a>
+        <div class="menu-icon"><i class="fa fa-bars"></i></div>
         <ul>
-        <li><a href="pages/betrieb.html">Betrieb anmelden</a></li>
-        <li><a href="unsere-mission.html">Unsere Mission</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
-    </ul>
-</nav>
-
-    <header>
+          <li><a href="pages/betrieb.html">Betrieb anmelden</a></li>
+          <li><a href="unsere-mission.html">Unsere Mission</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      
+    <header class="gradient-bg">
         <div class="buttons">
-<a href=""class="btn">Für Betriebe</a>
-<a href=""class="btn">Hol dir die App!</a>
+<a href=""class="btn transform">Für Betriebe</a>
+<a href=""class="btn transform">Hol dir die App!</a>
 </div>
 </header>
+
+
+
     <main>
         <section class="top-bg">
             <h1>Gemeinsam gegen Verschwendung</h1>
             <p>Hilf uns gegen Food Waste vorzugehen und lade das App herunter. </p>
             <article id="info">
                 <h2>Deine Plattform für Überproduktions- und Nicht-Standardprodukte</h2>
-                <img src="img/food-waste.jpg" alt="Gegen Foodwaste">
+                <img class="foodwaste" src="img/food-waste.jpg" alt="Gegen Foodwaste">
             </article>
         </section>
         <section>
@@ -45,6 +50,7 @@
         </section>
     </main>
     <footer>
+        
         <div class="copyright">
             <p>&copy Copyright</p>
         </div>
@@ -54,6 +60,28 @@
          <a href="https://www.linkedin.com">  <i class="fa-brands fa-linkedin"></i></a> 
         </div>
     </footer>
+
+
+<script>
+    const menuIcon = document.querySelector('.menu-icon');
+const navList = document.querySelector('nav ul');
+const body = document.querySelector('body');
+
+menuIcon.addEventListener('click', () => {
+  // Toggle menu icon class
+  menuIcon.classList.toggle('change');
+
+  // Toggle navigation list class
+  navList.classList.toggle('show');
+
+  // Toggle body overflow
+  body.classList.toggle('no-scroll');
+});
+
+
+
+
+        </script>
 
 </body>
 </html>
