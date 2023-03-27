@@ -31,10 +31,53 @@
     transform: scale(1.1);
   }
 
-  /*Nav */
+  /*Navigation */
   #logo{
     width: 20%;
 
+  }
+
+  nav a {
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #6c63ff;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  /* Styles for hamburger menu */
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul{
+    display: flex;
+
+    width: 30%;
+    justify-content: space-between;
+  }
+
+  nav li{
+    list-style: none;
+  }
+  
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .fa-bars {
+    font-size: 24px;
   }
 
   
@@ -128,7 +171,7 @@
     background-color: #6c63ff;
   }
   
-  /* Main Content */
+  /* Main Content - Global */
   main {
     max-width: 1200px;
     margin: 0 auto;
@@ -201,6 +244,26 @@
   .content{
     margin-top: 5%;
   }
+
+  /* Main Content - Betrieb.html */
+  .fb-2{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: 2.5% 0;
+  }
+
+  .anmeldung-title{
+    background-color: olivedrab;
+    padding-bottom: 400px;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: #fff;
+  }
+
+  .fb-2 img {
+    margin-right: 2.5%;
+  }
   
   /* Footer */
   footer {
@@ -238,264 +301,45 @@
   }
   
   
-  /* Navigation */
-  
-  nav a {
-    color: #333;
-    text-decoration: none;
-    transition: all 0.3s ease;
-  }
-  
-  nav a:hover {
-    color: #6c63ff;
-    text-decoration: underline;
-    font-weight: bold;
-  }
-  
-  /* Styles for hamburger menu */
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  nav ul{
-    display: flex;
-
-    width: 30%;
-    justify-content: space-between;
-  }
-
-  nav li{
-    list-style: none;
-  }
-  
-  .menu-icon {
-    display: none;
-    cursor: pointer;
-  }
-  
-  .fa-bars {
-    font-size: 24px;
-  }
-  @media screen and (max-width: 768px) {
-    #info {
-        flex-direction: column;
-      }
-
-      .buttons{
-        flex-direction: column;
-      }
-
-      .btn{
-        margin-top: 100px;
-      }
-
-    .menu-icon {
-      display: block;
-      position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
-    z-index: 999;
-    }
-  
-    nav ul {
-        width: 100%;
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: red;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        overflow-y: auto;
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in-out;
-    }
-
-    nav ul.show {
-        transform: translateX(0%);
-      }
-  
-    nav li {
-      margin-top: 1.5rem;
- 
-    }
-    nav a {
-        color: #333;
-        text-decoration: none;
-        font-size: 2rem;
-        transition: color 0.3s ease-in-out;
-        font-weight: bold;
-      }
-    
-    
-    
-      .menu-icon span {
-        display: block;
-        width: 2rem;
-        height: 0.25rem;
-        background-color: #333;
-        margin: 0.5rem;
-        border-radius: 0.25rem;
-        transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
-        transform-origin: 0.5px;
-      }
-    
-      .menu-icon .first-line {
-        transform: translateY(-3px);
-      }
-    
-      .menu-icon .last-line {
-        transform: translateY(3px);
-      }
-    
-      .menu-icon.change .first-line {
-        transform: rotate(45deg) translateY(3px);
-      }
-    
-      .menu-icon.change .last-line {
-        transform: rotate(-45deg) translateY(-3px);
-      }
-    
-      .menu-icon.change span:nth-child(2) {
-        opacity: 0;
-        transform: scaleX(0);
-      }
-    
-      body.no-scroll {
-        overflow: hidden;
-      }
-
-  }
-  
-  
   /*CSS Formular für betrieb.html */
 
-  /* Form Styles *//* Material Design Form Styles */
-
-.md-form {
-    max-width: 600px;
+  form {
+    width: 400px;
+    padding: 2.5%;
     margin: 0 auto;
-    padding: 40px;
-    box-sizing: border-box;
-    border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .md-form__title {
-    font-size: 2rem;
-    margin-top: 0;
-    margin-bottom: 40px;
-    text-align: center;
-  }
-  
-  .md-form__group {
-    margin-bottom: 20px;
-  }
-  
-  .md-form__label {
-    display: block;
-    margin-bottom: 8px;
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: #000;
-  }
-  
-  .md-form__input {
-    width: 100%;
-    padding: 16px;
-    border-radius: 4px;
-    border: none;
-    background-color: #f5f5f5;
-    font-size: 1.2rem;
-    color: #000;
-    box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.2s ease-in-out;
-  }
-  
-  .md-form__input:focus {
-    outline: none;
-    background-color: #eee;
-  }
-  
-  .md-form__button {
-    display: block;
-    width: 100%;
-    padding: 16px;
-    border-radius: 4px;
-    border: none;
-    background-color: #3f51b5;
-    font-size: 1.2rem;
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-  }
-  
-  
-  
-/*FAQ mit Material design */
-.faq {
-    padding: 20px;
-  }
-  
-  .accordion {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .accordion-item {
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    overflow: hidden;
-  }
-  
-  .accordion-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    cursor: pointer;
-    background-color: #f5f5f5;
-  }
-  
-  .accordion-title {
-    margin: 0;
-    font-size: 18px;
-  }
-  
-  .accordion-content {
-    padding: 15px;
-    background-color: #fff;
-  }
-  
-  .accordion-content p {
-    margin: 0;
-  }
-  
-  .accordion-item.active .accordion-header i {
-    transform: rotate(45deg);
-  }
-  
-  @media only screen and (min-width: 768px) {
-    .accordion {
-      max-width: 700px;
-    }
-  }
-  
 
+  }
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  
+  
   /*Mitarbeitercards für Unsere Mission */
   .card {
     display: flex;
@@ -575,11 +419,7 @@
 /*FAQ */
 
 
-.container {
-  margin: 0 auto;
-  padding: 4rem;
-  width: 48rem;
-}
+
 
 .accordion .accordion-item {
   border-bottom: 1px solid #e5e5e5;
@@ -666,3 +506,107 @@
   font-weight: 300;
   margin: 2em 0;
 }
+
+
+
+
+@media screen and (max-width: 768px) {
+  #info {
+      flex-direction: column;
+    }
+
+    .buttons{
+      flex-direction: column;
+    }
+
+    .btn{
+      margin-top: 100px;
+    }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 999;
+  }
+
+  nav ul {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: red;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      overflow-y: auto;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+  }
+
+  nav ul.show {
+      transform: translateX(0%);
+    }
+
+  nav li {
+    margin-top: 1.5rem;
+
+  }
+  nav a {
+      color: #333;
+      text-decoration: none;
+      font-size: 2rem;
+      transition: color 0.3s ease-in-out;
+      font-weight: bold;
+    }
+  
+  
+  
+    .menu-icon span {
+      display: block;
+      width: 2rem;
+      height: 0.25rem;
+      background-color: #333;
+      margin: 0.5rem;
+      border-radius: 0.25rem;
+      transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
+      transform-origin: 0.5px;
+    }
+  
+    .menu-icon .first-line {
+      transform: translateY(-3px);
+    }
+  
+    .menu-icon .last-line {
+      transform: translateY(3px);
+    }
+  
+    .menu-icon.change .first-line {
+      transform: rotate(45deg) translateY(3px);
+    }
+  
+    .menu-icon.change .last-line {
+      transform: rotate(-45deg) translateY(-3px);
+    }
+  
+    .menu-icon.change span:nth-child(2) {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+  
+    body.no-scroll {
+      overflow: hidden;
+    }
+
+
+    .fb-2{
+      flex-direction: column;
+    }
+
+}
+
