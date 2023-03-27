@@ -48,6 +48,11 @@
     text-decoration: underline;
     font-weight: bold;
   }
+
+  .active{
+    background-color: orange;
+    padding: 2px;
+  }
   
   /* Styles for hamburger menu */
   
@@ -245,6 +250,10 @@
     margin-top: 5%;
   }
 
+  section {
+    margin: 2.5% 0;
+  }
+
   /* Main Content - Betrieb.html */
   .fb-2{
     display: flex;
@@ -372,6 +381,7 @@
 .tabs {
 	display: flex;
 	flex-wrap: wrap; 
+  margin-top: 2.5%;
 }
 .tabs label {
 	order: 1;
