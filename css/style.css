@@ -6,6 +6,7 @@
   }
   
   /* Global Styles */
+ 
   body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -22,6 +23,7 @@
   }
 
   /*Animation img */
+  
   .foodwaste{
     width: 50%;
     transition: transform 0.3s ease-in-out;
@@ -32,6 +34,7 @@
   }
 
   /*Navigation */
+ 
   #logo{
     width: 20%;
 
@@ -51,16 +54,16 @@
 
   .active{
     background-color: orange;
-    padding: 2px;
+    padding: 2.5%;
   }
   
   /* Styles for hamburger menu */
-  
+ 
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 2.5%;
 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
@@ -121,14 +124,14 @@
 
   .text {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: transform 0.5s ease-out;
     color: #556b2f;
     font-size: 4rem;
     font-family: 'Abril Fatface', cursive;
-   
+   text-align: center;
     padding: 5%;
   }
 
@@ -146,6 +149,7 @@
   }
   
   /*button animation */
+
   .transform {
     animation-name: transform;
     animation-duration: 1s;
@@ -177,6 +181,7 @@
   }
   
   /* Main Content - Global */
+ 
   main {
     max-width: 1200px;
     margin: 0 auto;
@@ -255,6 +260,7 @@
   }
 
   /* Main Content - Betrieb.html */
+
   .fb-2{
     display: flex;
     width: 80%;
@@ -275,6 +281,7 @@
   }
   
   /* Footer */
+  
   footer {
     background-color: #333;
     padding: 20px;
@@ -311,6 +318,7 @@
   
 
   /*Main Content - Kontakt.html */
+
   .contact-img{
     width: 50%;
   }
@@ -318,6 +326,7 @@
   /*CSS Formular für betrieb.html */
 
   form {
+   
     width: 400px;
    
     margin: 0 auto;
@@ -355,6 +364,7 @@
   
   
   /*Mitarbeitercards für Unsere Mission */
+
   .card {
     display: flex;
     flex-direction: column;
@@ -383,6 +393,7 @@
   /**
  * Tabs
  */
+
 .tabs {
 	display: flex;
 	flex-wrap: wrap; 
@@ -532,10 +543,15 @@
 
     .buttons{
       flex-direction: column;
+      font-size: 0.75rem;
+      justify-content: flex-end;
+      align-items: center;
+     
     }
 
     .btn{
       margin-top: 100px;
+      margin-right: 20px;
     }
 
   .menu-icon {
@@ -546,6 +562,10 @@
   z-index: 999;
   }
 
+  .top-bg h1{
+    font-size: 2.5rem;
+  }
+
   nav ul {
       width: 100%;
       position: fixed;
@@ -553,7 +573,7 @@
       right: 0;
       bottom: 0;
       left: 0;
-      background-color: red;
+      background-color: #fffce8;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -621,13 +641,17 @@
 
     .fb-2{
       flex-direction: column;
+      align-items: center;
+      width: 100%;
     }
 
 
     /*Main Content - Kontakt.html */
+   
   .contact-img{
     width: 100%;
     margin-top: 5%;
   }
 }
+
 
